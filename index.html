@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Password Generator</h1>
+            <p>Create a strong and secure password</p>
+        </div>
+
+        <div class="password-box">
+            <input type="text" id="password" placeholder="Your password" readonly>
+            <button id="copyBtn">Copy</button>
+        </div>
+
+        <div class="length-section">
+            <div class="label-row">
+                <label for="length">Password Length</label>
+                <span id="lengthValue">12</span>
+            </div>
+
+            <input type="range" id="length" min="4" max="32" value="12">
+        </div>
+
+        <div class="options">
+
+            <label>
+                <input type="checkbox" id="uppercase" checked>
+                Include Uppercase Letters (A-Z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="lowercase" checked>
+                Include Lowercase Letters (a-z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="numbers" checked>
+                Include Numbers (0-9)
+            </label>
+
+            <label>
+                <input type="checkbox" id="symbols">
+                Include Symbols (!@#$%)
+            </label>
+
+        </div>
+
+        <div class="strength-section">
+            <span>Password Strength</span>
+            <span id="strength">Not Generated</span>
+        </div>
+
+        <button id="generateBtn" class="generate-btn">
+            Generate Password
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

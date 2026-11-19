@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #243b55;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #777;
+    font-size: 14px;
+}
+
+.password-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.password-box input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    min-width: 0;
+}
+
+.password-box button {
+    background: #243b55;
+    color: white;
+    border: none;
+    padding: 0 17px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.length-section {
+    margin-bottom: 25px;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+#lengthValue {
+    color: #243b55;
+}
+
+#length {
+    width: 100%;
+    cursor: pointer;
+    accent-color: #243b55;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #444;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.options input {
+    width: 16px;
+    height: 16px;
+    accent-color: #243b55;
+}
+
+.strength-section {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#strength {
+    color: #777;
+}
+
+.generate-btn {
+    width: 100%;
+    padding: 14px;
+    background: #243b55;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.generate-btn:hover {
+    background: #141e30;
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #16803c;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 22px;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+}
